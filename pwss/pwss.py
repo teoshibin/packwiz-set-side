@@ -37,10 +37,11 @@ def genLoadExcel(excelPath, fileNames, allTomls, url):
 
     for fn in newFileNames:
         toml = allTomls[fn]
+        fullUrl = url + str(toml["update"]["curseforge"]["project-id"])
         newRow = {
             "name":[toml["name"]], 
             "filename":[fn],
-            "url":[url + str(toml["update"]["curseforge"]["project-id"])],
+            "url":[f"=HYPERLINK(\"{fullUrl}\",\"{fullUrl}\")"],
             "side":[toml["side"]]
         }
         df = pd.concat([df, pd.DataFrame(newRow)])
