@@ -1,8 +1,7 @@
 # Packwiz Toml to Excel 2 way sync
-load existing packwiz mods toml into excel containing name, filename, url and side for easy server and client tag editing. Exisitng config from toml will be loaded into excel and new excel side will be saved back into toml. url to allow quick access of the mod page for checking if the mods is for client only. (If you do not have excel just upload it to google doc and export it back down after editing)
+load existing [packwiz](https://github.com/packwiz/packwiz) mods toml into excel containing name, filename, url and side for easy `server`, `client`, and `both` tag editing. Exisitng config from toml will be loaded into excel and new excel side will be saved back into toml. url to allow quick access of the mod page for checking if the mods is for client only. (If you do not have excel just upload it to google doc and export it back down after editing)
 
 **Always backup before using it, as this script is altering packwiz toml files.**
-
 
 ## Installation & Usage
 ### Option 1
@@ -13,7 +12,7 @@ cd "YOUR_PACK"
 ```
 
 ### Option 2
-Running from source, which will require python and packages.  
+Running from source, which will require `Python 3.10.5` and packages.  
 Clone this repo and open terminal in repo folder. Bash commands as follow:
 ```sh
 python -m venv pwss/venv
