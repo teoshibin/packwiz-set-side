@@ -2,6 +2,7 @@
 load existing [packwiz](https://github.com/packwiz/packwiz) mods toml into excel containing name, filename, url and side for easy `server`, `client`, and `both` tag editing. Exisitng config from toml will be loaded into excel and new excel side will be saved back into toml. url to allow quick access of the mod page for checking if the mods is for client only. (If you do not have excel just upload it to google doc and export it back down after editing)
 
 **Always backup before using it, as this script is altering packwiz toml files.**
+**Always save and close excel before running the script, otherwise excel will self destruct**
 
 ## Installation & Usage
 ### Option 1
