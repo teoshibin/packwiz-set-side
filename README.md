@@ -12,7 +12,7 @@ cd "YOUR_PACK"
 ```
 
 ### Option 2
-Running from source, which will require `Python 3.10.5` and packages.  
+Running from source, whichs uses `Python 3.10.5`(not a must) and packages.  
 Clone this repo and open terminal in repo folder. Bash commands as follow:
 ```sh
 python -m venv pwss/venv
@@ -25,4 +25,9 @@ cd "pwss/venv/Scripts"
 cd "YOUR_PACK"
 python -u "PATH_TO_pwss.py"
 deactivate
+```
+Additionally if you want to build it just do this, and do it when your virtual environment is activated.
+```
+pip install pyinstaller
+pyinstaller --onefile .\pwss\pwss.py
 ```
